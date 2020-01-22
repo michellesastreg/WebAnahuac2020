@@ -1,0 +1,42 @@
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-gap: 10px;
+}
+
+header {
+background-color: beige;
+grid-column: 2 / span 2;
+grid-row: 1/2;
+}
+
+main {
+    background-color: rgb(245, 167, 248);
+    grid-column: 2 / span 4;
+    grid-row: 2 / span 2;
+}
+
+footer {
+    background-color: rgb(202, 202, 79);
+    grid-column: 1 / span 7;
+    grid-row: 6 / span 1;
+}
+
+.confondo {
+    background-image: url(../imgs/abstracto.jfif);
+    grid-column: 4/6;
+    grid-row: 3/5;
+}
+
+.sinfondo {
+    background-color: rgba(141, 70, 111, 0.315);
+    grid-column: 5/6;
+    grid-row: 1/5;
+    z-index: 2;
+}
+
+h1, h2, p {
+    padding: .5rem;
+}

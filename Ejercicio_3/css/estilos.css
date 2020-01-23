@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 348px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(230, 211, 255);
+}
+
+h1, p, li {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(247, 255, 233);
+    color: rgb(255, 222, 218);
+    padding: 1rem;
+    text-align: center;
+}

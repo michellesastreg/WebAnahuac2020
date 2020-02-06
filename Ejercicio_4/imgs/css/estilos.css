@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+    *, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Mis estilos */
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 1fr 1fr 1fr 50px;
+    grid-template-areas:
+    "cabeza cabeza cabeza cabeza . lado"
+    ". principal principal principal . lado"
+    ". principal principal principal . lado"
+    ". principal principal principal . lado"
+    "pie pie pie pie pie pie";
+    gap: 5px;
+}
+header {
+    grid-area: cabeza;
+    background-color: #ad9191;
+}
+main {
+    grid-area: principal;
+    background-color: #f8e5e5;
+    display: flex;
+    flex-wrap: wrap;
+}
+aside {
+    grid-area: lado;
+    background-color: #ccb7c6;
+}
+footer {
+    grid-area: pie;
+    background-color: #f5eaf7;
+    color: #ffffff;
+}
+
+object, svg {
+    width: 20vw;
+}
+h1, h2, p, li {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: .4rem;
+}
+h1 {
+    font-size: 4rem;
+    color: #ffffff;
+}

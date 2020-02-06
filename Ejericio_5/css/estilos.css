@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Teko:400,500,700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+    background-color: beige;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1, h2, p, img {
+    padding: .4rem;
+}
+
+#elefante {
+    width: 200px;
+    float: left;
+    shape-outside: circle (58px at center center);
+}
+
+#elefante2 {
+    width: 200px;
+    height: 180px;
+    float: left;
+    clip-path: polygon(50% 6%, 61% 35%, 85% 36%, 68% 57%, 75% 87%, 50% 70%, 24% 86%, 32% 57%, 12% 36%, 39% 35%);
+    shape-outside: polygon(50% 6%, 61% 35%, 85% 36%, 68% 57%, 75% 87%, 50% 70%, 24% 86%, 32% 57%, 12% 36%, 39% 35%);
+}
+
+img {
+    float: left;
+}
+
+#elefantepng {
+    width: 200px;
+    float: left;
+    clip-path: url(../imgs/elefante_3.png);
+    shape-outside:  url(../imgs/elefante_3.png);
+}
+
+main {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "u u u d d d"
+    "u u u d d d"
+    "t t t . . ."  
+    "t t t . . ."
+    ;
+}
+
+#uno {
+    grid-area: u;
+}
+
+#dos {
+    grid-area: d;
+}
+
+#tres {
+    grid-area: t;
+}

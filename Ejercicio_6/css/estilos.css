@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+p, li {
+    font-family: 'Playfair Display', serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 200px;
+    gap: 5px;
+    grid-template-areas: 
+    ". . he he he he he he"
+    "ma ma ma ma ma ma . ."
+    "ma ma ma ma ma ma . ."
+    "ma ma ma ma ma ma . ."
+    ". . . . . . . ."
+    "fo fo fo fo fo fo fo fo"
+
+    ;
+}
+header {
+    grid-area: he;
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    grid-area: ma;
+    background-color: rgb(253, 218, 245);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 40vw;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(77, 18, 45);
+}
+
+a:hover {
+    color: rgb(189, 71, 161);
+}
+
+footer {
+    grid-area: fo;
+    background-color: rgb(207, 191, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section {
+    width: 20vw;
+    height: 40vh;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin: .5rem;
+}
+
+section:nth-child(5) {
+    background-color: rgb(145, 45, 106);
+}
+
+i.fas, i.fab {
+    font-size: 2rem;
+}
+
+i.fas, i.fab:hover {
+    color: crimson;
+}
